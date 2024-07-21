@@ -1,43 +1,43 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors Game</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link your CSS file -->
-</head>
-<body>
-    <h1>ROCK PAPER SCISSOR</h1>
-    <div id="container">
-        <div id="btn-container">
-            <h3 id="header">PUNY HUMAN, MAKE YOUR CHOICE</h3>
-            <button id="rock">ROCK</button>
-            <button id="paper">PAPER</button>
-            <button id="scissor">SCISSOR</button>
-        </div>
-        <div id="computer">
-            <h3 id="header">MY CHOICE</h3>
-            <button class="btn-computer"></button>
-        </div>
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+  <body>
+    <h1>Rock Paper Scissors</h1>
+    <div class="choices">
+      <div class="choice" id="rock">
+        <img src="./images/rock.png" />
+      </div>
+      <div class="choice" id="paper">
+        <img src="./images/paper.png" />
+      </div>
+      <div class="choice" id="scissors">
+        <img src="./images/scissors.png" />
+      </div>
     </div>
 
-    <div id="details"></div>
-
-    <div id="result">
-        <div id="score">
-            <div>YOUR SCORE</div>
-            <div class="human">0</div>
-        </div>
-        <div id="score">
-            <div>COMPUTER'S SCORE</div>
-            <div class="computer">0</div>
-        </div>
+    <div class="score-board">
+      <div class="score">
+        <p id="user-score">0</p>
+        <p>You</p>
+      </div>
+      <div class="score">
+        <p id="comp-score">0</p>
+        <p>Comp</p>
+      </div>
     </div>
 
-    <button id="reset-btn">Reset Game</button>
-
-    <script src="script.js"></script> <!-- Link your JavaScript file -->
-</body>
+    <div class="msg-container">
+      <p id="msg">Play your move</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
 
 
